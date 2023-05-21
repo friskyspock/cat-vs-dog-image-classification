@@ -2,8 +2,8 @@ import os
 import tensorflow as tf
 
 num_skipped = 0
-for folder_name in ("Cat", "Dog"):
-    folder_path = os.path.join("PetImages", folder_name)
+for folder_name in ("Cats", "Dogs"):
+    folder_path = os.path.join("train", folder_name)
     for fname in os.listdir(folder_path):
         #print(fname)
         fpath = os.path.join(folder_path, fname)
